@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FCC device rule changes — Deltafile</title>
+<meta name="description" content="Every FCC action touching the 47 CFR equipment certification rules, with effective dates and a citation to the Federal Register. Updated automatically.">
+<link rel="canonical" href="https://fabrosi-programming.github.io/deltafile-site/">
+<meta property="og:title" content="FCC device rule changes — Deltafile">
+<meta property="og:description" content="Every FCC action touching the 47 CFR equipment certification rules, with effective dates and a citation to the Federal Register. Updated automatically.">
+<meta property="og:type" content="website">
+<link rel="alternate" type="application/rss+xml" title="Deltafile — FCC device rule changes" href="https://fabrosi-programming.github.io/deltafile-site/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#F4F5F7;--surface:#FCFCFB;--surface-2:#EEF0F3;--ink:#161A20;
+--ink-2:#3D4550;--muted:#5C6470;--hair:#DCE0E6;--hair-strong:#C3C9D2;
+--accent:#2C3E6B;--rule:#B8402F;--rule-soft:#F4E2DE;--prop:#1B7FA8;--prop-soft:#DCEBF3;
+--f-display:"Spectral",ui-serif,Georgia,serif;--f-sans:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+--f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1319;--surface:#14181F;
+--surface-2:#1A1F28;--ink:#E7EAEE;--ink-2:#C3CAD4;--muted:#98A1AE;--hair:#242B35;
+--hair-strong:#333C48;--accent:#93A8DA;--rule:#D2624C;--rule-soft:#2E1D18;
+--prop:#3E97BC;--prop-soft:#14262F}}
+:root[data-theme="dark"]{--bg:#0F1319;--surface:#14181F;--surface-2:#1A1F28;--ink:#E7EAEE;
+--ink-2:#C3CAD4;--muted:#98A1AE;--hair:#242B35;--hair-strong:#333C48;--accent:#93A8DA;
+--rule:#D2624C;--rule-soft:#2E1D18;--prop:#3E97BC;--prop-soft:#14262F}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-sans);
+font-size:.9rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:800px;margin:0 auto;padding:clamp(20px,5vw,44px) clamp(16px,5vw,26px) 80px}
+nav{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;
+border-bottom:2px solid var(--ink);padding-bottom:13px;margin-bottom:26px}
+nav .brand{font-family:var(--f-display);font-weight:600;font-size:1.25rem;
+letter-spacing:-.015em;color:var(--ink);text-decoration:none}
+nav .tag{font-family:var(--f-mono);font-size:.7rem;color:var(--muted)}
+nav .links{margin-left:auto;display:flex;gap:14px;font-family:var(--f-mono);font-size:.74rem}
+h1{font-family:var(--f-display);font-weight:600;font-size:1.75rem;line-height:1.2;
+margin:0 0 10px;letter-spacing:-.02em;text-wrap:balance}
+.lede{margin:0 0 26px;color:var(--ink-2);max-width:66ch}
+h2{font-family:var(--f-display);font-weight:600;font-size:1.2rem;margin:34px 0 6px}
+.parts-grid{display:grid;gap:9px;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));margin:18px 0 8px}
+.part-card{background:var(--surface);border:1px solid var(--hair);border-radius:4px;
+padding:12px 14px;text-decoration:none;color:inherit;display:block}
+.part-card:hover{border-color:var(--accent)}
+.part-card .n{font-family:var(--f-mono);font-size:.7rem;color:var(--accent);font-weight:600}
+.part-card .t{display:block;margin-top:2px;font-size:.82rem;color:var(--ink-2)}
+.part-card .c{font-family:var(--f-mono);font-size:.68rem;color:var(--muted);margin-top:5px;display:block}
+.item{background:var(--surface);border:1px solid var(--hair);border-left:3px solid var(--hair-strong);
+border-radius:4px;padding:16px 18px;margin-bottom:11px}
+.item.rule{border-left-color:var(--rule)}.item.prop{border-left-color:var(--prop)}
+.item-head{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:8px}
+.kind{font-family:var(--f-mono);font-size:.64rem;font-weight:600;letter-spacing:.07em;
+text-transform:uppercase;padding:3px 8px;border-radius:2px;border:1px solid}
+.kind.rule{color:var(--rule);border-color:var(--rule);background:var(--rule-soft)}
+.kind.prop{color:var(--prop);border-color:var(--prop);background:var(--prop-soft)}
+.chip{font-family:var(--f-mono);font-size:.64rem;padding:3px 7px;border-radius:2px;
+background:var(--surface-2);border:1px solid var(--hair);color:var(--ink-2);text-decoration:none}
+.chip:hover{border-color:var(--accent)}
+.item h3{margin:0 0 10px;font-family:var(--f-display);font-weight:600;font-size:1rem;line-height:1.35}
+.dates{display:flex;flex-wrap:wrap;gap:7px 24px;margin:0 0 11px}
+.dates div{display:flex;flex-direction:column}
+.dates dt{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.08em;
+text-transform:uppercase;color:var(--muted)}
+.dates dd{margin:0;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2)}
+.dates dd.hi{color:var(--ink);font-weight:600}
+blockquote{margin:0 0 11px;padding:10px 13px;background:var(--surface-2);border-radius:3px;
+font-family:var(--f-display);font-style:italic;font-size:.85rem;color:var(--ink-2)}
+blockquote cite{display:block;margin-top:6px;font-family:var(--f-mono);font-style:normal;
+font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.src{margin:0;font-size:.74rem}.src a{color:var(--accent);font-family:var(--f-mono);word-break:break-word}
+.callout{background:var(--surface);border:1px solid var(--hair);border-left:4px solid var(--accent);
+border-radius:4px;padding:16px 18px;margin:22px 0}
+.callout p{margin:0 0 8px}.callout p:last-child{margin:0}
+.callout code{font-family:var(--f-mono);font-size:.78rem;background:var(--surface-2);
+padding:2px 6px;border-radius:2px;word-break:break-all}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--hair);
+font-size:.74rem;color:var(--muted);display:grid;gap:8px}
+footer b{color:var(--ink-2)}
+a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head><body><div class="wrap">
+<nav>
+  <a class="brand" href="https://fabrosi-programming.github.io/deltafile-site/">Deltafile</a>
+  <span class="tag">FCC device rule changes</span>
+  <span class="links"><a href="https://fabrosi-programming.github.io/deltafile-site/">All changes</a><a href="https://fabrosi-programming.github.io/deltafile-site/feed.xml">RSS</a></span>
+</nav>
+<h1>Every FCC action touching the 47 CFR device rules</h1>
+<p class="lede">Parts 2, 15, 18, 22, 24, 68, 95 and 96 &mdash; the rules a certification body
+and an accredited test lab work against. Each entry gives the effective date and links to the
+primary source. No analysis, no advice: what changed, and where to read it.</p>
+<div class="callout">
+  <p><b>Follow this feed.</b> Every change below is published here as it appears in the
+     Federal Register. There is no signup and no email address to hand over.</p>
+  <p>Add <code>https://fabrosi-programming.github.io/deltafile-site/feed.xml</code> to any RSS reader, or bookmark the part you care about.</p>
+</div>
+<h2>Browse by rule part</h2>
+<div class="parts-grid"><a class="part-card" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">
+              <span class="n">47 CFR 2</span>
+              <span class="t">Equipment authorization procedures</span>
+              <span class="c">159 recorded changes</span>
+            </a><a class="part-card" href="https://fabrosi-programming.github.io/deltafile-site/parts/15/">
+              <span class="n">47 CFR 15</span>
+              <span class="t">Unlicensed RF devices</span>
+              <span class="c">81 recorded changes</span>
+            </a><a class="part-card" href="https://fabrosi-programming.github.io/deltafile-site/parts/18/">
+              <span class="n">47 CFR 18</span>
+              <span class="t">ISM equipment</span>
+              <span class="c">8 recorded changes</span>
+            </a><a class="part-card" href="https://fabrosi-programming.github.io/deltafile-site/parts/22/">
+              <span class="n">47 CFR 22</span>
+              <span class="t">Cellular device rules</span>
+              <span class="c">17 recorded changes</span>
+            </a><a class="part-card" href="https://fabrosi-programming.github.io/deltafile-site/parts/24/">
+              <span class="n">47 CFR 24</span>
+              <span class="t">PCS device rules</span>
+              <span class="c">10 recorded changes</span>
+            </a><a class="part-card" href="https://fabrosi-programming.github.io/deltafile-site/parts/68/">
+              <span class="n">47 CFR 68</span>
+              <span class="t">Telephone terminal equipment</span>
+              <span class="c">11 recorded changes</span>
+            </a><a class="part-card" href="https://fabrosi-programming.github.io/deltafile-site/parts/95/">
+              <span class="n">47 CFR 95</span>
+              <span class="t">Personal radio device rules</span>
+              <span class="c">34 recorded changes</span>
+            </a><a class="part-card" href="https://fabrosi-programming.github.io/deltafile-site/parts/96/">
+              <span class="n">47 CFR 96</span>
+              <span class="t">CBRS device rules</span>
+              <span class="c">14 recorded changes</span>
+            </a></div>
+<h2>Most recent changes</h2>
+<article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/15/">47 CFR 15</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-16197-protecting-against-national-security-threats-to-the-communications-supply/" style="color:inherit;text-decoration:none">Protecting Against National Security Threats to the Communications Supply Chain Through the Equipment Authorization Program</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>7 August 2026</dd></div><div><dt>Comments close</dt><dd class="hi">8 September 2026</dd></div></dl>
+  <blockquote>The Federal Communications Commission (Commission or FCC) issues a Third Further Notice of Proposed Rulemaking seeking comment on a broad set of additional measures to strengthen the security and integrity of its equipment authorization program. The measures include bifurcating the Covered List into producer/provider-based and production location-based categories; addressing &quot;white labeling&quot; of covered equipment; hardware and software bill of materials (HBOM/SBOM) disclosure requirements; further prohibitions or presumptions against authorizing equipment containing Covered List components or software; certification requirements for devices in Covered List sectors; reforms to equipment importation, marketing, and pre-authorization operation rules; restrictions on use of the FCC logo; streamlined revocation procedures; codification of permissive-change waivers for software, firmware, and hardware updates to covered equipment; codified definitions for UAS, UAS critical components, and routers; term limits on equipment authorizations; registration of Supplier&#x27;s Declaration of Conformity (SDoC) devices; modernization of the Commission&#x27;s equipment authorization database; updates to submarine cable Covered List rules; and a proposal to require a U.S.-based liable party for FCC-certified equipment.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/08/07/2026-16197/protecting-against-national-security-threats-to-the-communications-supply-chain-through-the">91 FR 51139</a>
+     &middot; FR document 2026-16197</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/95/">47 CFR 95</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-12510-deletion-of-obsolete-regulations/" style="color:inherit;text-decoration:none">Deletion of Obsolete Regulations</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>22 June 2026</dd></div><div><dt>Effective</dt><dd class="hi">21 August 2026</dd></div><div><dt>Comments close</dt><dd class="hi">13 July 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission) acts to eliminate certain outdated, obsolete, and unnecessary rules to modernize its regulatory framework.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/06/22/2026-12510/deletion-of-obsolete-regulations">91 FR 37043</a>
+     &middot; FR document 2026-12510</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-09822-promoting-the-integrity-and-security-of-telecommunications-certification-bodies/" style="color:inherit;text-decoration:none">Promoting the Integrity and Security of Telecommunications Certification Bodies, Measurement Facilities, and the Equipment Authorization Program</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>15 May 2026</dd></div><div><dt>Effective</dt><dd class="hi">15 June 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) adopts measures to strengthen national security and encourage reciprocity in testing and certification. The FCC creates a fast-track priority review process for devices subject to Pre-Approval Guidance (PAG) for applications tested in Trusted Test Labs. Also, updates post-market surveillance and enforcement procedures, and establishes confidential reporting channels for industry participants to raise concerns about violations or national security threats. Lastly, directs development of a consolidated list of prohibited entities to streamline applicant screening and aligns ownership reporting timelines for publicly traded companies with U.S. Securities and Exchange Commission requirements.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/05/15/2026-09822/promoting-the-integrity-and-security-of-telecommunications-certification-bodies-measurement">91 FR 27843</a>
+     &middot; FR document 2026-09822</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-09821-promoting-the-integrity-and-security-of-telecommunications-certification-bodies/" style="color:inherit;text-decoration:none">Promoting the Integrity and Security of Telecommunications Certification Bodies, Measurement Facilities, and the Equipment Authorization Program</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>15 May 2026</dd></div><div><dt>Comments close</dt><dd class="hi">15 June 2026</dd></div></dl>
+  <blockquote>The Federal Communications Commission (Commission or FCC) issues a Second Further Notice of Proposed Rulemaking proposing to cease recognition of test labs, Testing Certification Bodies (TCBs), and laboratory accreditation bodies in non-MRA or trade agreement participants (i.e., non-Reciprocal Territories). The Commission also seeks comment on modernizing data analytics capabilities, and explores additional measures to protect intellectual property and national security.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/05/15/2026-09821/promoting-the-integrity-and-security-of-telecommunications-certification-bodies-measurement">91 FR 27884</a>
+     &middot; FR document 2026-09821</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/68/">47 CFR 68</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-07343-deleting-obsolete-and-duplicative-wireline-rules/" style="color:inherit;text-decoration:none">Deleting Obsolete and Duplicative Wireline Rules</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>16 April 2026</dd></div><div><dt>Effective</dt><dd class="hi">15 June 2026</dd></div><div><dt>Comments close</dt><dd class="hi">6 May 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (the Commission) continues its efforts to modernize its regulatory framework by rescinding facially obsolete provisions of its rules.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/04/16/2026-07343/deleting-obsolete-and-duplicative-wireline-rules">91 FR 20372</a>
+     &middot; FR document 2026-07343</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-07269-wireless-telecommunications-bureau-refreshes-record-on-lower-c-band/" style="color:inherit;text-decoration:none">Wireless Telecommunications Bureau Refreshes Record on Lower C-Band Petitions for Reconsideration</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>15 April 2026</dd></div><div><dt>Comments close</dt><dd class="hi">5 May 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission) seeks to refresh the record on pending petitions for reconsideration of the Commission&#x27;s 2020 Report and Order in the Expanding Flexible Use of the 3.7 to 4.2 GHz Band rulemaking (2020 C- band R&amp;O) in light of certain technical proposals in the 2025 Notice of Proposed Rulemaking in the Upper C-band (3.98-4.2 GHz) rulemaking (Upper C-band NPRM) and the responsive record thereto, seeking a harmonized approach across the entire C-band.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/04/15/2026-07269/wireless-telecommunications-bureau-refreshes-record-on-lower-c-band-petitions-for-reconsideration">91 FR 20084</a>
+     &middot; FR document 2026-07269</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-06865-spectrum-abundance-for-weird-space-stuff/" style="color:inherit;text-decoration:none">Spectrum Abundance for Weird Space Stuff</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>9 April 2026</dd></div><div><dt>Comments close</dt><dd class="hi">11 May 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or we) looks to bring spectrum abundance for emergent space activities. &quot;Emergent&quot; or &quot;emergent space operations&quot; are those spacecraft or commercial operations in space that use radio spectrum for control of, or communications with, a spacecraft, but which are not communications satellites. Currently there is an acute shortage of usable and readily accessible spectrum for telemetry, tracking and command (TT&amp;C) functions that are essential for operating emergent spacecraft. Accordingly, this document seeks to clarify and expand the Commission&#x27;s traditional regulatory classifications so that emergent space operations have more predictable access to spectrum. Additionally, this document proposes to add a secondary allocation for the Space Operation Service (SOS) in spectrum bands that could support emergent space activities, particularly in frequency bands allocated for non-Federal use that may be lightly used in certain geographic areas. This document also proposes to allow existing licensees to lease their spectrum to earth station licensees to provide SOS in connection with emergent spacecraft.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/04/09/2026-06865/spectrum-abundance-for-weird-space-stuff">91 FR 17914</a>
+     &middot; FR document 2026-06865</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-06239-review-of-the-commission-s-rules-governing-the-896/" style="color:inherit;text-decoration:none">Review of the Commission&#x27;s Rules Governing the 896-901/935-940 MHz Band</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>31 March 2026</dd></div><div><dt>Effective</dt><dd class="hi">30 April 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) continues its efforts to expand broadband access in the 896-901/935-940 MHz band. This Report and Order now makes broadband available across all ten megahertz of this band. This Report and Order creates three options for 900 MHz licenses: a narrowband license; paired three-megahertz channels, called 3/3 broadband licenses: and paired five-megahertz channels, called 5/5 licenses.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/03/31/2026-06239/review-of-the-commissions-rules-governing-the-896-901935-940-mhz-band">91 FR 15889</a>
+     &middot; FR document 2026-06239</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/15/">47 CFR 15</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-03744-unlicensed-use-of-the-6-ghz-band-expanding-flexible/" style="color:inherit;text-decoration:none">Unlicensed Use of the 6 GHz Band; Expanding Flexible Use in Mid-Band Spectrum Between 3.7 and 24 GHz</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>25 February 2026</dd></div><div><dt>Effective</dt><dd class="hi">27 April 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) adopts rules allowing unlicensed geofenced variable power (GVP) devices to operate in the U-NII-5 and U-NII-7 portions of the 6 GHz band (5.925-7.125 GHz) at up to 11 dBm/MHz EIRP power spectral density and 24 dBm EIRP. GVP devices must use geofencing systems to prevent harmful interference to licensed microwave links and radio astronomy observatories. The geofencing systems will calculate exclusion zones where GVP devices cannot operate on specified frequencies. Each GVP access point must have a geolocation capability to determine its location and avoid operating on prohibited frequencies within the exclusion zones. Client devices must operate 6 dB below the access point&#x27;s authorized power. These rules permit the GVP devices to operate at higher power than very lower power 6 GHz band unlicensed devices.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/02/25/2026-03744/unlicensed-use-of-the-6-ghz-band-expanding-flexible-use-in-mid-band-spectrum-between-37-and-24-ghz">91 FR 9140</a>
+     &middot; FR document 2026-03744</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/15/">47 CFR 15</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-03420-unlicensed-use-of-the-6-ghz-band-expanding-flexible/" style="color:inherit;text-decoration:none">Unlicensed Use of the 6 GHz Band; Expanding Flexible Use in Mid-Band Spectrum Between 3.7 and 24 GHz</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>20 February 2026</dd></div><div><dt>Comments close</dt><dd class="hi">23 March 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) issued a Third Further Notice of Proposed Rulemaking to seek comment on two proposals to improve 6 GHz band (5.925-7.125 GHz) unlicensed device performance. One proposal would allow automated frequency coordination (AFC) systems to take into account building entry loss (BEL) when determining frequency and power- level availability for access points that are authorized to operate in both standard power and LPI modes--i.e., composite indoor/standard- power access points. This will provide stronger signals and better coverage inside homes and buildings, without increasing the risk of harmful interference to licensed services that share the 6 GHz band. Another proposal would allow low-power indoor access points to operate on cruise ships. These devices were previously banned on boats, but the Commission believes the risk of harmful interference occurring from this application is low because cruise ships are few in number and their thick metal walls block signals from escaping. The Commission also seeks comment broadly on any changes that could be made to the 6 GHz band unlicensed rules to reflect technological and business developments since the rules were first adopted in 2020.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/02/20/2026-03420/unlicensed-use-of-the-6-ghz-band-expanding-flexible-use-in-mid-band-spectrum-between-37-and-24-ghz">91 FR 8173</a>
+     &middot; FR document 2026-03420</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-03070-petition-for-reconsideration-of-action-in-rulemaking-proceeding-application/" style="color:inherit;text-decoration:none">Petition for Reconsideration of Action in Rulemaking Proceeding; Application for Review of Action in Rulemaking Proceeding; Correction</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>17 February 2026</dd></div></dl>
+  <blockquote>The Federal Communications Commission (Commission) published a document in the Federal Register of February 5, 2026, concerning request for replies to oppositions on specifications for Petition for Reconsideration of Action in Rulemaking Proceeding Application for Review of Action in Rulemaking Proceeding. The document contained incorrect dates.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/02/17/2026-03070/petition-for-reconsideration-of-action-in-rulemaking-proceeding-application-for-review-of-action-in">91 FR 7222</a>
+     &middot; FR document 2026-03070</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-03069-implementation-of-the-final-acts-of-the-world-radiocommunication/" style="color:inherit;text-decoration:none">Implementation of the Final Acts of the World Radiocommunication Conference (Geneva, 2015) (WRC-15), Other Allocation Issues, and Related Rule Updates; Correction</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>17 February 2026</dd></div><div><dt>Effective</dt><dd class="hi">13 February 2026</dd></div></dl>
+  <blockquote>The Federal Communications Commission (the FCC or Commission) is correcting a final rule that appeared in the Federal Register on January 14, 2026. The document issued a final rule regarding &quot;Implementation of the Final Acts of the World Radiocommunication Conference (Geneva, 2015) (WRC-15), Other Allocation Issues, and Related Rule Updates&quot;.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/02/17/2026-03069/implementation-of-the-final-acts-of-the-world-radiocommunication-conference-geneva-2015-wrc-15-other">91 FR 7148</a>
+     &middot; FR document 2026-03069</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-02285-petition-for-reconsideration-of-action-in-rulemaking-proceeding-application/" style="color:inherit;text-decoration:none">Petition for Reconsideration of Action in Rulemaking Proceeding Application for Review of Action in Rulemaking Proceeding</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>5 February 2026</dd></div></dl>
+  <blockquote>Petition for Reconsideration (Petition) has been filed in the Commission&#x27;s proceeding by Travis LeBlanc on behalf of SZ DJI Technology Co., Ltd. Application for Review (AFR) has been filed in the Commission&#x27;s proceeding by Fan Liang, Zhiyu Liang on behalf of Autel Robotics Co., Ltd.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/02/05/2026-02285/petition-for-reconsideration-of-action-in-rulemaking-proceeding-application-for-review-of-action-in">91 FR 5245</a>
+     &middot; FR document 2026-02285</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/15/">47 CFR 15</a><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/18/">47 CFR 18</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-01442-delete-delete-delete/" style="color:inherit;text-decoration:none">Delete, Delete, Delete</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>26 January 2026</dd></div><div><dt>Effective</dt><dd class="hi">27 March 2026</dd></div><div><dt>Comments close</dt><dd class="hi">17 February 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) continues its efforts to modernize regulatory framework by rescinding facially obsolete provisions of its rules. The Commission has undertaken a sweeping review aimed at eliminating outdated rules, reducing unnecessary regulatory burdens, accelerating infrastructure deployment, promoting network modernization, and spurring innovation. The Commission&#x27;s objective is to streamline, simplify, and smartly deregulate across multiple fronts simultaneously to better serve the public and support technological progress.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/01/26/2026-01442/delete-delete-delete">91 FR 3067</a>
+     &middot; FR document 2026-01442</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-01281-petition-for-reconsideration-of-action-in-rulemaking-proceeding/" style="color:inherit;text-decoration:none">Petition for Reconsideration of Action in Rulemaking Proceeding</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>23 January 2026</dd></div></dl>
+  <blockquote>Petition for Reconsideration (Petition) has been filed in the Commission&#x27;s proceeding by On behalf of Garmin International, Inc.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/01/23/2026-01281/petition-for-reconsideration-of-action-in-rulemaking-proceeding">91 FR 2895</a>
+     &middot; FR document 2026-01281</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-00588-implementation-of-the-final-acts-of-the-world-radiocommunication/" style="color:inherit;text-decoration:none">Implementation of the Final Acts of the World Radiocommunication Conference (Sharm el-Sheikh, 2019) (WRC-19), Revision to Table Mountain Radio Quiet Zone Field Strength Limits</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>14 January 2026</dd></div><div><dt>Effective</dt><dd class="hi">13 February 2026</dd></div><div><dt>Comments close</dt><dd class="hi">16 March 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) proposes to modify the Commission&#x27;s rules to implement certain spectrum allocation decisions from the International Telecommunication Union&#x27;s World Radiocommunication Conference&#x27;s 2019 Final Acts concerning portions of the radio spectrum between 495 kHz and 50.9 GHz, make other allocation changes, and make related updates to our service rules in this frequency range. These proposals are designed to harmonize our spectrum allocations with and conform our rules to the World Radiocommunication&#x27;s 2019 Final Acts to the extent that doing so would better meet domestic requirements.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/01/14/2026-00588/implementation-of-the-final-acts-of-the-world-radiocommunication-conference-sharm-el-sheikh-2019">91 FR 1482</a>
+     &middot; FR document 2026-00588</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2026-00587-implementation-of-the-final-acts-of-the-world-radiocommunication/" style="color:inherit;text-decoration:none">Implementation of the Final Acts of the World Radiocommunication Conference (Geneva, 2015) (WRC-15), Other Allocation Issues, and Related Rule Updates</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>14 January 2026</dd></div><div><dt>Effective</dt><dd class="hi">13 February 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) modifies the United States Table of Frequency Allocations (U.S. Table) in the Commission&#x27;s rules to implement certain spectrum allocation decisions from the International Telecommunication Union&#x27;s World Radiocommunication Conference&#x27;s 2015 Final Acts, including those for amateur radio, satellite services, and for aural broadcast auxiliary and television broadcast auxiliary stations by revising the Commission&#x27;s rules. These changes provide for increased domestic utilization of a range of spectrum in both satellite and terrestrial contexts.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2026/01/14/2026-00587/implementation-of-the-final-acts-of-the-world-radiocommunication-conference-geneva-2015-wrc-15-other">91 FR 1405</a>
+     &middot; FR document 2026-00587</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/22/">47 CFR 22</a><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/24/">47 CFR 24</a><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/95/">47 CFR 95</a><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/96/">47 CFR 96</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2025-22633-delete-delete-delete-removal-of-obsolete-regulations/" style="color:inherit;text-decoration:none">Delete, Delete, Delete; Removal of Obsolete Regulations</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>12 December 2025</dd></div><div><dt>Effective</dt><dd class="hi">10 February 2026</dd></div><div><dt>Comments close</dt><dd class="hi">2 January 2026</dd></div></dl>
+  <blockquote>In this document, Commission acts to eliminate certain outdated, obsolete, and unnecessary rules.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2025/12/12/2025-22633/delete-delete-delete-removal-of-obsolete-regulations">90 FR 57698</a>
+     &middot; FR document 2025-22633</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2025-22020-in-the-matter-of-upper-c-band-3-98/" style="color:inherit;text-decoration:none">In the Matter of Upper C-band (3.98-4.2 GHz)</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>5 December 2025</dd></div><div><dt>Comments close</dt><dd class="hi">5 January 2026</dd></div></dl>
+  <blockquote>In this Notice of Proposed Rulemaking (NPRM), the Federal Communications Commission (Commission) seeks comment on proposed rule changes that would expand the ecosystem for next generation wireless services in the 3.7-4.2 GHz band (C-band) by making as much as 180, and at least 100, megahertz of the 3.98-4.2 GHz band (Upper C-band) available for terrestrial wireless flexible use via a system of competitive bidding. This action would be in furtherance of Congress&#x27; direction in the One Big Beautiful Bill Act (OBBB Act) to &quot;complet[e] a system of competitive bidding not later than 2 years after the date of enactment of this Act for not less than 100 megahertz in the band between 3.98 gigahertz and 4.2 gigahertz.&quot; The NPRM seeks comment on options for reconfiguring the Upper C-band in the contiguous United States ranging from 180 megahertz (3.98-4.16 GHz) to the congressionally mandated minimum of 100 megahertz (3.98-4.08 GHz) for terrestrial wireless use. The NPRM seeks comment on how much Upper C- band spectrum--beyond the minimum 100 megahertz required by the OBBB Act--could be repurposed by incumbent fixed satellite service (FSS) space station operators and on how the transition could be effectuated if their existing customers relocate out of the C-band. Under any of the reconfiguration options under consideration, the NPRM&#x27;s baseline proposition is to apply the existing 3.7 GHz Service rules (applicable in the Lower C-band from 3.7-3.98 GHz) to any newly authorized terrestrial wireless operations. Any other rules and requirements, including those relating to the transition process, would be modeled to the greatest extent possible on those that applied to the Lower C-band transition. The NPRM also seeks comment on a range of issues associated with repurposing some portion of the Upper C-band, including: reallocation of the 4.0-4.2 GHz band; competitive bidding procedures for an eventual auction; licensing, operating, and technical rules for any new wireless services; (4) transitioning incumbent FSS operations; and promoting co-existence with adjacent band radio altimeters.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2025/12/05/2025-22020/in-the-matter-of-upper-c-band-398-42-ghz">90 FR 56076</a>
+     &middot; FR document 2025-22020</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2025-21928-protecting-against-national-security-threats-to-the-communications-supply/" style="color:inherit;text-decoration:none">Protecting Against National Security Threats to the Communications Supply Chain Through the Equipment Authorization Program</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>4 December 2025</dd></div><div><dt>Comments close</dt><dd class="hi">5 January 2026</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) aims to further its actions in strengthening prohibitions on authorization of covered equipment and to clarify the rules and enforcement of such. The Commission seeks additional comment on modular transmitters and component parts in relation to covered equipment. The Commission addresses the partial court remand of the decision in its November 2022 EA Security R&amp;O by proposing a definition of &quot;critical infrastructure&quot; as used on the Covered List and seeking comment on the implementation of that definition. The Commission also seeks comment on whether any modification to an authorized device by an entity identified on the Covered List should require a new application for certification. Finally, the Commission seeks comment on clarifying the scope of activities that constitute marketing of equipment and on measures to strengthen enforcement of marketing prohibitions.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2025/12/04/2025-21928/protecting-against-national-security-threats-to-the-communications-supply-chain-through-the">90 FR 55826</a>
+     &middot; FR document 2025-21928</p>
+</article><article class="item prop">
+  <div class="item-head"><span class="kind prop">Proposed Rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/15/">47 CFR 15</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2025-21325-promoting-technological-solutions-to-combat-contraband-wireless-device-use/" style="color:inherit;text-decoration:none">Promoting Technological Solutions To Combat Contraband Wireless Device Use in Correctional Facilities</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>26 November 2025</dd></div><div><dt>Comments close</dt><dd class="hi">26 December 2025</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (FCC or Commission) seeks comment on proposals that would enhance public safety by removing regulatory barriers to the deployment and viability of existing and developing technologies that combat contraband wireless device use in correctional facilities. This document seeks comment on a proposed framework to authorize, for the first time, non-federal operation of radio frequency (RF) jamming solutions in correctional facilities. The Commission seeks to foster a collaborative environment among key stakeholders, including departments of correction, solutions providers, wireless providers, public safety and 911 entities, to explore an expanded range of solutions to a shared problem.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2025/11/26/2025-21325/promoting-technological-solutions-to-combat-contraband-wireless-device-use-in-correctional">90 FR 54248</a>
+     &middot; FR document 2025-21325</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2025-21001-protecting-against-national-security-threats-to-the-communications-supply/" style="color:inherit;text-decoration:none">Protecting Against National Security Threats to the Communications Supply Chain Through the Equipment Authorization Program</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>25 November 2025</dd></div><div><dt>Effective</dt><dd class="hi">26 December 2025</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) clarifies that rules prohibiting authorization of covered equipment include modular transmitters and adopts a prohibition on authorization of devices that include modular transmitters that are covered equipment. The Commission also adopts a procedure to limit previously granted authorizations of covered equipment to prohibit the continued importation and marketing of such equipment. It further discusses the broad scope of the prohibition on authorization of equipment identified on the Covered List by clarifying the term &quot;produced by&quot; as used in the Commission&#x27;s rules concerning covered equipment and clarifying the prohibition on modification to previously authorized covered equipment.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2025/11/25/2025-21001/protecting-against-national-security-threats-to-the-communications-supply-chain-through-the">90 FR 53227</a>
+     &middot; FR document 2025-21001</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2025-16285-promoting-the-integrity-and-security-of-telecommunications-certification-bodies/" style="color:inherit;text-decoration:none">Promoting the Integrity and Security of Telecommunications Certification Bodies, Measurement Facilities, and the Equipment Authorization Program; Correction</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>26 August 2025</dd></div><div><dt>Effective</dt><dd class="hi">8 September 2025</dd></div></dl>
+  <blockquote>The Federal Communications Commission (Commission) is correcting a final rule that appeared in the Federal Register on August 7, 2025. The document addressed requirements for all recognized telecommunication certification bodies (TCBs), test labs, and laboratory accreditation bodies to certify to the Commission that they are not owned by, controlled by, or subject to the direction of a prohibited entity and to report all equity or voting interests of 5% or greater by any entity. The document inadvertently included compliance dates for provisions that are delayed indefinitely and excluded a word in one section.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2025/08/26/2025-16285/promoting-the-integrity-and-security-of-telecommunications-certification-bodies-measurement">90 FR 41517</a>
+     &middot; FR document 2025-16285</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2025-15919-delete-delete-delete-removal-of-obsolete-regulations/" style="color:inherit;text-decoration:none">Delete, Delete, Delete; Removal of Obsolete Regulations</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>20 August 2025</dd></div><div><dt>Effective</dt><dd class="hi">20 October 2025</dd></div><div><dt>Comments close</dt><dd class="hi">9 September 2025</dd></div></dl>
+  <blockquote>In this document, the Commission acts to eliminate certain outdated, obsolete, and unnecessary rules.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2025/08/20/2025-15919/delete-delete-delete-removal-of-obsolete-regulations">90 FR 40536</a>
+     &middot; FR document 2025-15919</p>
+</article><article class="item rule">
+  <div class="item-head"><span class="kind rule">Final rule</span><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/2/">47 CFR 2</a><a class="chip" href="https://fabrosi-programming.github.io/deltafile-site/parts/15/">47 CFR 15</a></div>
+  <h3><a href="https://fabrosi-programming.github.io/deltafile-site/documents/2025-14970-promoting-the-integrity-and-security-of-telecommunications-certification-bodies/" style="color:inherit;text-decoration:none">Promoting the Integrity and Security of Telecommunications Certification Bodies, Measurement Facilities, and the Equipment Authorization Program</a></h3>
+  <dl class="dates"><div><dt>Published</dt><dd>7 August 2025</dd></div><div><dt>Effective</dt><dd class="hi">8 September 2025</dd></div></dl>
+  <blockquote>In this document, the Federal Communications Commission (Commission or FCC) requires all recognized telecommunication certification bodies (TCBs), test labs, and laboratory accreditation bodies to certify to the Commission that they are not owned by, controlled by, or subject to the direction of a prohibited entity and to report all equity or voting interests of 5% or greater by any entity. The FCC also amends it rules to state that it will not recognize--and will revoke any existing recognition of--any TCB, test lab, or laboratory accreditation body that fails to provide, or that provides a false or inaccurate, certification; or that fails to provide, or provides false or inaccurate, information regarding equity or voting interests of 5% or greater. The FCC prohibits recognition of any TCB, test lab, or laboratory accreditation body owned by, controlled by, or subject to the direction of a prohibited entity, and prohibits such TCBs, test labs, and laboratory accreditation bodies from participating in the Commission&#x27;s equipment authorization program, not only with regard to the equipment certification process but also the Supplier&#x27;s Declaration of Conformity (SDoC) process.<cite>Federal Communications Commission, verbatim</cite></blockquote>
+  <p class="src"><a href="https://www.federalregister.gov/documents/2025/08/07/2025-14970/promoting-the-integrity-and-security-of-telecommunications-certification-bodies-measurement">90 FR 38045</a>
+     &middot; FR document 2025-14970</p>
+</article>
+
+  <footer>
+    <div><b>How this is produced.</b> Documents are retrieved from the Federal Register API.
+      Relevance is decided by the CFR parts the FCC itself lists on each document, not by our
+      reading of it. Every description is the agency's own wording, quoted.</div>
+    <div><b>What this is not.</b> Deltafile is an independent monitor of public documents. It is
+      not affiliated with the FCC and is not an official source &mdash; those are the Federal
+      Register and the Office of the Federal Register. We report what changed and cite where.
+      We do not advise on whether a change applies to you or on your compliance position.
+      Your TCB or counsel can help with that.</div>
+    <div><b>Machine-generated, human-reviewable.</b> These records are assembled by code from
+      public source documents. Every item links to the primary source so you can check it.</div>
+  </footer></div></body></html>

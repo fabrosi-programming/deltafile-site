@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fabrosi-programming.github.io/deltafile-site/sitemap.xml
