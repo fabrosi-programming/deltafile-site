@@ -84,6 +84,14 @@ padding:15px 17px;margin-bottom:11px}
 .dl-tag{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;
 color:var(--muted);display:block;margin-bottom:4px}
 .dl-old p,.dl-new p{margin:0;font-size:.84rem;color:var(--ink-2);white-space:pre-wrap}
+/* The exact characters that differ. Marked with weight and a underline as
+   well as colour, so the change is visible without relying on colour alone. */
+.dl-old del,.dl-new ins{text-decoration:none;font-weight:600;border-radius:2px;
+padding:0 2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dl-old del{color:var(--rule);background:color-mix(in srgb,var(--rule) 18%,transparent);
+text-decoration:line-through;text-decoration-thickness:1px}
+.dl-new ins{color:var(--prop);background:color-mix(in srgb,var(--prop) 18%,transparent);
+text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:2px}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--hair);
 font-size:.74rem;color:var(--muted);display:grid;gap:8px}
 footer b{color:var(--ink-2)}
@@ -103,100 +111,103 @@ no interpretation, and no judgement about which changes matter.</p>
   <p><b>How to read this.</b> Each entry names the section it falls in, then shows the previous
      wording and the current wording. The reference under each is the archived snapshot and line
      range it was computed from.</p>
+  <p><b>Highlighted characters are the exact difference.</b> Struck-through text was removed,
+     underlined text was added. Where a change is a single character &mdash; a paragraph
+     relettered, a cross reference renumbered &mdash; that character is what is marked.</p>
   <p>The authoritative text is the Code of Federal Regulations itself.
      <a href="https://fabrosi-programming.github.io/deltafile-site/parts/95/">See the FCC actions affecting this part</a>.</p>
 </div>
 <article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">Subpart L—Intelligent Transportation Systems (ITS) On-Board Units (OBUs) in the 5895-5925 MHz Band</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>Subpart L—DSRCS On-Board Units</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Subpart L—Intelligent Transportation Systems (ITS) On-Board Units (OBUs) in the 5895-5925 MHz Band
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>Subpart L—<del>DSRCS</del> On-Board Units</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Subpart L—<ins>Intelligent Transportation Systems (ITS)</ins> On-Board Units<ins> (OBUs) in the 5895-5925 MHz Band
 
 Regulations Governing the Use of Frequencies in the 5895-5925 MHz Band for Dedicated Short-Range Communications Services (DSRCS) On Board Units (OBUs)
 
-Regulations Governing the Use of Frequencies in the 5895-5925 MHz Band for Cellular Vehicle to Everything (C-V2X) On Board Units (OBUs)</p></div>
+Regulations Governing the Use of Frequencies in the 5895-5925 MHz Band for Cellular Vehicle to Everything (C-V2X) On Board Units (OBUs)</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L25-L29</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Added</span>
     <span class="sect">§ 95.303 Definitions.</span></div>
-  <div class="dl-new"><span class="dl-tag">Now reads</span><p>Uncrewed Aircraft System Services. The rules for these services, including technical rules, are contained in part 88 of this chapter. Only NNA stations authorized on a Non-Networked Access basis, as those terms are defined in § 88.3 of this chapter, are considered part of the Citizens Band Radio Services.</p></div>
+  <div class="dl-new"><span class="dl-tag">Now reads</span><p><ins>Uncrewed Aircraft System Services. The rules for these services, including technical rules, are contained in part 88 of this chapter. Only NNA stations authorized on a Non-Networked Access basis, as those terms are defined in § 88.3 of this chapter, are considered part of the Citizens Band Radio Services.</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L105-L105</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Added</span>
     <span class="sect">§ 95.303 Definitions.</span></div>
-  <div class="dl-new"><span class="dl-tag">Now reads</span><p>[82 FR 41104, Aug. 29, 2017, as amended at 90 FR 1400, Jan. 8, 2025]</p></div>
+  <div class="dl-new"><span class="dl-tag">Now reads</span><p><ins>[82 FR 41104, Aug. 29, 2017, as amended at 90 FR 1400, Jan. 8, 2025]</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L109-L109</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">§ 95.919 CBRS replacement parts.</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>(c) A detachable external microphone may be replaced with any external microphone that does not alter the modulation characteristics in a way that results in a violation of §§ 95.967, 95.973, 95.975 or 95.979.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>(c) A detachable external microphone may be replaced with any external microphone that does not alter the modulation characteristics in a way that results in a violation of § 95.967, § 95.973, § 95.975 or § 95.979.</p></div>
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>(c) A detachable external microphone may be replaced with any external microphone that does not alter the modulation characteristics in a way that results in a violation of §<del>§</del> 95.967, 95.973, 95.975 or 95.979.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>(c) A detachable external microphone may be replaced with any external microphone that does not alter the modulation characteristics in a way that results in a violation of § 95.967, <ins>§ </ins>95.973,<ins> §</ins> 95.975 or <ins>§ </ins>95.979.</p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L523-L523</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">§ 95.2325 WMTS interference.</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>Authorized health care providers, in conjunction with the equipment manufacturers, must cooperate in the selection and use of frequencies in order to reduce the potential for interference with other wireless medical telemetry devices, or other co-primary users. However, WMTS operations in the 608-614 MHz band are not entitled to protection from adjacent band interference from broadcast television stations transmitting on TV Channels 36 and 38.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Authorized health care providers, in conjunction with the equipment manufacturers, must cooperate in the selection and use of frequencies in order to reduce the potential for interference with other wireless medical telemetry devices, or other co-primary users. However, WMTS operations in the 608- 614 MHz band are not entitled to protection from adjacent band interference from broadcast television stations transmitting on TV Channels 36 and 38.</p></div>
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>Authorized health care providers, in conjunction with the equipment manufacturers, must cooperate in the selection and use of frequencies in order to reduce the potential for interference with other wireless medical telemetry devices, or other co-primary users. However, WMTS operations in the 608-614 MHz band are not entitled to protection from adjacent band interference from broadcast television stations transmitting on TV Channels 36 and 38.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Authorized health care providers, in conjunction with the equipment manufacturers, must cooperate in the selection and use of frequencies in order to reduce the potential for interference with other wireless medical telemetry devices, or other co-primary users. However, WMTS operations in the 608-<ins> </ins>614 MHz band are not entitled to protection from adjacent band interference from broadcast television stations transmitting on TV Channels 36 and 38.</p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1181-L1181</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">§ 95.2559 MedRadio channel access requirements.</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>(f) Requirements for MBANs. A MedRadio programmer/control transmitter and its associated medical body-worn transmitters shall not commence operating in, and shall automatically cease operating in, the 2360-2390 MHz band if the programmer/control transmitter does not receive, in accordance with the protocols specified by the manufacturer, a control message permitting such operation. Medical body-worn transmitters shall cease operating in 2360-2390 MHz if they lose communication with their associated programmer/control transmitter. Additionally, a MedRadio programmer/control transmitter and its associated medical body-worn transmitters operating in the 2360-2390 MHz band shall comply with a control message that notifies the devices to limit transmissions to segments of the 2360-2390 MHz band or to cease operation in the band.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>(f) Requirements for MBANs. A MedRadio programmer/control transmitter and its associated medical body- worn transmitters shall not commence operating in, and shall automatically cease operating in, the 2360-2390 MHz band if the programmer/control transmitter does not receive, in accordance with the protocols specified by the manufacturer, a control message permitting such operation. Medical body-worn transmitters shall cease operating in 2360-2390 MHz if they lose communication with their associated programmer/control transmitter. Additionally, a MedRadio programmer/control transmitter and its associated medical body-worn transmitters operating in the 2360-2390 MHz band shall comply with a control message that notifies the devices to limit transmissions to segments of the 2360-2390 MHz band or to cease operation in the band.</p></div>
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>(f) Requirements for MBANs. A MedRadio programmer/control transmitter and its associated medical body-worn transmitters shall not commence operating in, and shall automatically cease operating in, the 2360-2390 MHz band if the programmer/control transmitter does not receive, in accordance with the protocols specified by the manufacturer, a control message permitting such operation. Medical body-worn transmitters shall cease operating in 2360-2390 MHz if they lose communication with their associated programmer/control transmitter. Additionally, a MedRadio programmer/control transmitter and its associated medical body-worn transmitters operating in the 2360-2390 MHz band shall comply with a control message that notifies the devices to limit transmissions to segments of the 2360-2390 MHz band or to cease operation in the band.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>(f) Requirements for MBANs. A MedRadio programmer/control transmitter and its associated medical body-<ins> </ins>worn transmitters shall not commence operating in, and shall automatically cease operating in, the 2360-2390 MHz band if the programmer/control transmitter does not receive, in accordance with the protocols specified by the manufacturer, a control message permitting such operation. Medical body-worn transmitters shall cease operating in 2360-2390 MHz if they lose communication with their associated programmer/control transmitter. Additionally, a MedRadio programmer/control transmitter and its associated medical body-worn transmitters operating in the 2360-2390 MHz band shall comply with a control message that notifies the devices to limit transmissions to segments of the 2360-2390 MHz band or to cease operation in the band.</p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1397-L1397</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">Subpart L—Intelligent Transportation Systems (ITS) On-Board Units (OBUs) in the 5895-5925 MHz Band</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>Subpart L—DSRCS On-Board Units</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Subpart L—Intelligent Transportation Systems (ITS) On-Board Units (OBUs) in the 5895-5925 MHz Band</p></div>
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>Subpart L—<del>DSRCS</del> On-Board Units</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Subpart L—<ins>Intelligent Transportation Systems (ITS)</ins> On-Board Units<ins> (OBUs) in the 5895-5925 MHz Band</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1717-L1717</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">§ 95.3101 Scope.</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>This subpart contains rules that apply only to On-Board Units (OBUs) transmitting in the 5895-5925 MHz frequency band in the Dedicated Short-Range Communications Services (DSRCS) (see § 90.371 of this chapter).
-[86 FR 23299, May 3, 2021]</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>This subpart contains rules that apply only to ITS On-Board Units (OBUs) transmitting in the 5895-5925 MHz frequency band. ITU Roadside Units (RSUs) are authorized under part 90, subpart M of this chapter.
-[89 FR 100855, Dec. 13, 2024]</p></div>
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>This subpart contains rules that apply only to On-Board Units (OBUs) transmitting in the 5895-5925 MHz frequency band <del>in</del> <del>th</del>e <del>Dedicated Short-Range Communications Services</del> (<del>D</del>S<del>RCS</del>) <del>(see</del> <del>§</del> 90<del>.371</del> of this chapter<del>)</del>.
+[8<del>6</del> FR <del>23299</del>, <del>May</del> 3, 202<del>1</del>]</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>This subpart contains rules that apply only to<ins> ITS</ins> On-Board Units (OBUs) transmitting in the 5895-5925 MHz frequency band<ins>.</ins> <ins>ITU</ins> <ins>Roadsid</ins>e <ins>Units</ins> (<ins>R</ins>S<ins>Us</ins>) <ins>are</ins> <ins>authorized under part</ins> 90<ins>, subpart M</ins> of this chapter.
+[8<ins>9</ins> FR <ins>100855</ins>, <ins>Dec.</ins> <ins>1</ins>3, 202<ins>4</ins>]</p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1720-L1721</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">§ 95.3103 Definitions.</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>§ 95.3103 Definitions, OBUs.
-Dedicated Short-range Communications Services (DSRCS). A service providing for data transfer between various mobile and roadside transmitting units for the purposes of improving traffic flow, highway safety and performing other intelligent transportation functions. See § 90.7 of this chapter for a more detailed definition.
-On-Board Unit (OBU). OBUs are low-power devices on vehicles that transfer data to roadside units in the Dedicated Short-Range Communications Service ( see §§ 90.371-90.383 of this chapter), to improve traffic flow and safety, and for other intelligent transportation system purposes. See § 90.7 of this chapter.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>§ 95.3103 Definitions.
-Cellular Vehicle to Everything (C-V2X). See § 90.7 of this chapter.
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>§ 95.3103 Definitions<del>, OBUs</del>.
+<del>D</del>e<del>dic</del>a<del>ted</del> <del>Short-range Communications Services (DSRCS). A service providing for data transfer between various mobile and roadside transmitting units for the purposes of improving traffic flow, highway safety and performing other intelligent transportation functions. See § 90.7 of this chapter for a more detailed definition.
+On-Board Unit (OBU). OBUs are low-power devices on vehicles that transfer data</del> to <del>roadside units in the Dedicated Short-Range Communications Service</del> (<del> see §§ 90.371</del>-<del>90.383 of this chapter</del>)<del>, to improve traffic flow and safety, and for other intelligent transportation system purposes</del>. See § 90.7 of this chapter.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>§ 95.3103 Definitions.
+<ins>C</ins>e<ins>llul</ins>a<ins>r</ins> <ins>Vehicle</ins> to <ins>Everything</ins> (<ins>C</ins>-<ins>V2X</ins>). See § 90.7 of this chapter.<ins>
 Dedicated Short-Range Communications Services (DSRCS). See § 90.7 of this chapter.
 Geofenced Onboard Unit. An OBU that incorporates geofencing to protect the appropriate areas around federal radiolocation sites currently enumerated in 47 CFR 90.387(b) by reducing power within those areas. Such OBUs programmed with information about these sites have the option of operation under the transmit power limits set forth in section 95.3404 of this subpart.
 Geofencing. For the purposes of this subpart, geofencing is used to create a virtual boundary around a physical location by enabling a radiofrequency device using a geolocation capability to determine whether its geographic coordinates are within a defined geographic area.
-On-Board Unit (OBU). See § 90.7 of this chapter.</p></div>
+On-Board Unit (OBU). See § 90.7 of this chapter.</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1723-L1728</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Added</span>
     <span class="sect">§ 95.3103 Definitions.</span></div>
-  <div class="dl-new"><span class="dl-tag">Now reads</span><p>[82 FR 41104, Aug. 29, 2017, as amended at 89 FR 100855, Dec. 13, 2024]
+  <div class="dl-new"><span class="dl-tag">Now reads</span><p><ins>[82 FR 41104, Aug. 29, 2017, as amended at 89 FR 100855, Dec. 13, 2024]
 
 Regulations Governing the Use of Frequencies in the 5895-5925 MHz Band for Dedicated Short-Range Communications Services (DSRCS) On Board Units (OBUs)
 Source: 89 FR 100855, Dec. 13, 2024, unless otherwise noted.
-Effective Date Note: At 89 FR 100855, Dec. 13, 2024, the undesignated center heading above § 95.3105 was removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</p></div>
+Effective Date Note: At 89 FR 100855, Dec. 13, 2024, the undesignated center heading above § 95.3105 was removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1730-L1734</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Added</span>
     <span class="sect">§ 95.3131 Permissible uses, OBUs.</span></div>
-  <div class="dl-new"><span class="dl-tag">Now reads</span><p>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</p></div>
+  <div class="dl-new"><span class="dl-tag">Now reads</span><p><ins>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1740-L1740</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Added</span>
     <span class="sect">§ 95.3161 OBU transmitter certification.</span></div>
-  <div class="dl-new"><span class="dl-tag">Now reads</span><p>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</p></div>
+  <div class="dl-new"><span class="dl-tag">Now reads</span><p><ins>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1747-L1747</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Added</span>
     <span class="sect">§ 95.3163 OBU frequencies.</span></div>
-  <div class="dl-new"><span class="dl-tag">Now reads</span><p>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</p></div>
+  <div class="dl-new"><span class="dl-tag">Now reads</span><p><ins>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1752-L1752</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Added</span>
     <span class="sect">§ 95.3167 OBU transmit power limit.</span></div>
-  <div class="dl-new"><span class="dl-tag">Now reads</span><p>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</p></div>
+  <div class="dl-new"><span class="dl-tag">Now reads</span><p><ins>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1761-L1761</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Added</span>
     <span class="sect">§ 95.3189 OBU technical standard.</span></div>
-  <div class="dl-new"><span class="dl-tag">Now reads</span><p>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.
+  <div class="dl-new"><span class="dl-tag">Now reads</span><p><ins>Effective Date Note: At 89 FR 100855, Dec. 13, 2024, §§ 90.3105—95.3189 were removed, effective Feb. 11, 2025. At 90 FR 5724, Jan. 17, 2025, the effective date was corrected to Dec. 14, 2026.
 
 Regulations Governing the Use of Frequencies in the 5895-5925 MHz Band for Cellular Vehicle to Everything (C-V2X) On Board Units (OBUs)
 Source: 89 FR 100855, Dec. 13, 2024, unless otherwise noted.
@@ -239,7 +250,7 @@ C-V2X OBUs are permitted to operate in the 5895-5925 MHz band.
 (2) −13 dBm/MHz within ±1 megahertz to ±5 megahertz of the band edges;
 (3) −16 dBm/MHz within ±5 megahertz to ±30 megahertz of the band edges; and
 (4) −28 dBm/MHz beyond 30 megahertz from the band edges.
-[89 FR 100855, Dec. 13, 2024]</p></div>
+[89 FR 100855, Dec. 13, 2024]</ins></p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part95/title47-part95/2025-10-01T00:00:00Z.txt#L1769-L1812</span></p>
 </article>
 

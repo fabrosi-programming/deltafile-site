@@ -84,6 +84,14 @@ padding:15px 17px;margin-bottom:11px}
 .dl-tag{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;
 color:var(--muted);display:block;margin-bottom:4px}
 .dl-old p,.dl-new p{margin:0;font-size:.84rem;color:var(--ink-2);white-space:pre-wrap}
+/* The exact characters that differ. Marked with weight and a underline as
+   well as colour, so the change is visible without relying on colour alone. */
+.dl-old del,.dl-new ins{text-decoration:none;font-weight:600;border-radius:2px;
+padding:0 2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dl-old del{color:var(--rule);background:color-mix(in srgb,var(--rule) 18%,transparent);
+text-decoration:line-through;text-decoration-thickness:1px}
+.dl-new ins{color:var(--prop);background:color-mix(in srgb,var(--prop) 18%,transparent);
+text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:2px}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--hair);
 font-size:.74rem;color:var(--muted);display:grid;gap:8px}
 footer b{color:var(--ink-2)}

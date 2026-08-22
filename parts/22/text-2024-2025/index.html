@@ -84,6 +84,14 @@ padding:15px 17px;margin-bottom:11px}
 .dl-tag{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;
 color:var(--muted);display:block;margin-bottom:4px}
 .dl-old p,.dl-new p{margin:0;font-size:.84rem;color:var(--ink-2);white-space:pre-wrap}
+/* The exact characters that differ. Marked with weight and a underline as
+   well as colour, so the change is visible without relying on colour alone. */
+.dl-old del,.dl-new ins{text-decoration:none;font-weight:600;border-radius:2px;
+padding:0 2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dl-old del{color:var(--rule);background:color-mix(in srgb,var(--rule) 18%,transparent);
+text-decoration:line-through;text-decoration-thickness:1px}
+.dl-new ins{color:var(--prop);background:color-mix(in srgb,var(--prop) 18%,transparent);
+text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:2px}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--hair);
 font-size:.74rem;color:var(--muted);display:grid;gap:8px}
 footer b{color:var(--ink-2)}
@@ -103,23 +111,26 @@ no interpretation, and no judgement about which changes matter.</p>
   <p><b>How to read this.</b> Each entry names the section it falls in, then shows the previous
      wording and the current wording. The reference under each is the archived snapshot and line
      range it was computed from.</p>
+  <p><b>Highlighted characters are the exact difference.</b> Struck-through text was removed,
+     underlined text was added. Where a change is a single character &mdash; a paragraph
+     relettered, a cross reference renumbered &mdash; that character is what is marked.</p>
   <p>The authoritative text is the Code of Federal Regulations itself.
      <a href="https://fabrosi-programming.github.io/deltafile-site/parts/22/">See the FCC actions affecting this part</a>.</p>
 </div>
 <article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">§ 22.99 Definitions.</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>Cellular system. An automated high-capacity system of one or more multi-channel base stations designed to provide radio telecommunication services to mobile stations over a wide area in a spectrally efficient manner. Cellular systems employ techniques such as automatic hand-off between base stations of communications in progress to enable channels to be re-used at relatively short distances.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Cellular system. An automated high-capacity system of one or more multi- channel base stations designed to provide radio telecommunication services to mobile stations over a wide area in a spectrally efficient manner. Cellular systems employ techniques such as automatic hand-off between base stations of communications in progress to enable channels to be re-used at relatively short distances.</p></div>
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>Cellular system. An automated high-capacity system of one or more multi-channel base stations designed to provide radio telecommunication services to mobile stations over a wide area in a spectrally efficient manner. Cellular systems employ techniques such as automatic hand-off between base stations of communications in progress to enable channels to be re-used at relatively short distances.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Cellular system. An automated high-capacity system of one or more multi-<ins> </ins>channel base stations designed to provide radio telecommunication services to mobile stations over a wide area in a spectrally efficient manner. Cellular systems employ techniques such as automatic hand-off between base stations of communications in progress to enable channels to be re-used at relatively short distances.</p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part22/title47-part22/2025-10-01T00:00:00Z.txt#L95-L95</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">§ 22.589 One-way or two-way application requirements.</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>(3) For each protected transmitter identified, show the results of distance calculations indicating that there would be no overlap of service and interfering contours, or alternatively, indicate that the licensee of or applicant for the protected transmitter and/ or the applicant, as required, have agreed in writing to accept any interference resulting from operation of the proposed transmitter.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>(3) For each protected transmitter identified, show the results of distance calculations indicating that there would be no overlap of service and interfering contours, or alternatively, indicate that the licensee of or applicant for the protected transmitter and/or the applicant, as required, have agreed in writing to accept any interference resulting from operation of the proposed transmitter.</p></div>
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>(3) For each protected transmitter identified, show the results of distance calculations indicating that there would be no overlap of service and interfering contours, or alternatively, indicate that the licensee of or applicant for the protected transmitter and/<del> </del>or the applicant, as required, have agreed in writing to accept any interference resulting from operation of the proposed transmitter.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>(3) For each protected transmitter identified, show the results of distance calculations indicating that there would be no overlap of service and interfering contours, or alternatively, indicate that the licensee of or applicant for the protected transmitter and/or the applicant, as required, have agreed in writing to accept any interference resulting from operation of the proposed transmitter.</p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part22/title47-part22/2025-10-01T00:00:00Z.txt#L651-L651</span></p>
 </article><article class="hunk">
   <div class="hunk-head"><span class="kind prop">Revised</span>
     <span class="sect">§ 22.1003 Eligibility.</span></div>
-  <div class="dl-old"><span class="dl-tag">Previously</span><p>Any eligible entity (see § 22.7) may apply for central station license(s) and/or offshore subscriber licenses under this subpart.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Any eligible entity (see § 22.7) may apply for central station license(s) and/ or offshore subscriber licenses under this subpart.</p></div>
+  <div class="dl-old"><span class="dl-tag">Previously</span><p>Any eligible entity (see § 22.7) may apply for central station license(s) and/or offshore subscriber licenses under this subpart.</p></div><div class="dl-new"><span class="dl-tag">Now reads</span><p>Any eligible entity (see § 22.7) may apply for central station license(s) and/<ins> </ins>or offshore subscriber licenses under this subpart.</p></div>
   <p class="src"><span class="dim">snapshots/cfr-title47-part22/title47-part22/2025-10-01T00:00:00Z.txt#L1335-L1335</span></p>
 </article>
 
