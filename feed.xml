@@ -5,7 +5,14 @@
   <description>Every FCC action touching the 47 CFR equipment certification rules,
     with effective dates and a Federal Register citation.</description>
   <language>en-us</language>
-  <lastBuildDate>Mon, 26 Oct 2026 11:03:49 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 11:02:04 +0000</lastBuildDate>
+  <item>
+    <title>Unleashing the Power of Unlicensed Ultra-Wideband Devices; Petition of Robert Bosch LLC for Amendment of the Part 15 Subpart F Ultra-Wideband Rules; and Petition of Alliance for Automative Innovation et al. To Amend Part 15 of the FCC&#x27;s Rules To Permit the Operation of Certain Ultra-Wideband Devices</title>
+    <link>https://www.federalregister.gov/documents/2026/11/02/2026-22337/unleashing-the-power-of-unlicensed-ultra-wideband-devices-petition-of-robert-bosch-llc-for-amendment</link>
+    <guid isPermaLink="false">2026-22337</guid>
+    <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    <description>47 CFR 15. Published 2 November 2026. Effective 2 December 2026. The Federal Communications Commission (Commission or FCC) proposes to update its rules for Ultra-Wideband (UWB) devices to reflect significant technological developments since the rules were first adopted in 2002. UWB technology has matured into a widely used, low-power enabler that supports applications in tracking, automation, precision location, health monitoring, athletic performance, and public safety. As capabilities of UWB have expanded, the existing rules have not kept pace with the technological change, resulting in an increasing number of waiver requests received by the Commission to authorize modern devices. The Notice of Proposed Rulemaking seeks comment on revisions intended to modernize the UWB framework, provide greater flexibility for future applications, promote continued innovation, and ensure the protection of incumbent federal and non-federal spectrum users.</description>
+  </item>
   <item>
     <title>Protecting Against National Security Threats to the Communications Supply Chain Through the Equipment Authorization Program</title>
     <link>https://www.federalregister.gov/documents/2026/09/11/2026-18535/protecting-against-national-security-threats-to-the-communications-supply-chain-through-the</link>
@@ -348,12 +355,5 @@
     <guid isPermaLink="false">2024-13641</guid>
     <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
     <description>47 CFR 2. Published 25 June 2024. Effective 25 June 2024. The Federal Communications Commission (Commission) is correcting a final rule that appeared in the Federal Register on April 30, 2024.</description>
-  </item>
-  <item>
-    <title>Use of the 5.850-5.925 GHz Band</title>
-    <link>https://www.federalregister.gov/documents/2024/06/17/2024-13266/use-of-the-5850-5925-ghz-band</link>
-    <guid isPermaLink="false">2024-13266</guid>
-    <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-    <description>47 CFR 95. Published 17 June 2024. In this document, the Office of Engineering and Technology invites supplemental comment to address issues regarding the use of geofencing in cellular-vehicle-to-everything on-board units to reduce out-of-band emission power limits around specified federal radiolocation services.</description>
   </item>
 </channel></rss>
